@@ -1,18 +1,17 @@
 body{
     background-color: rgb(153, 152, 152);
 }
+
 .header{
    text-align: center;
    color: white;
-
 }
 
 .form{
      display: inline-block; 
-   /* border: solid red 2px; */
     padding: 30px;
-    
 }
+
 #enter{
  font-size: 20px;
  font-weight: bold;
@@ -40,12 +39,13 @@ body{
     border: solid white;
     background-color: white;
 }
+
 #guessSubmit:hover{
     color: white;
     background-color: green;
     border: solid green;
     cursor: pointer;
-  }
+}
 
 #resetButton{
     margin-top: 20px;
@@ -65,8 +65,6 @@ body{
     cursor: pointer;
 }
 
-
-
 #result{
     border: solid green;
     padding: 10px; 
@@ -74,11 +72,10 @@ body{
     box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
     font-size: 18px;
 }
+
 #lowOrhigh{
     font-size: 20px;
 }
-
-
 
 #lastResult{
     width: auto;
