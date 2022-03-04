@@ -1,0 +1,29 @@
+<!DOCTYPE HTML>
+<html>
+ <head>
+  <meta charset="UFT-8" >
+  <title>Guess the Number</title>
+  <link rel="stylesheet" href="hads.css">
+ </head>
+ <body>
+  <h1 class="header">Guess the Number!</h1> 
+
+  <!-- if you do not use this  onsubmit="return false"
+  the page will refresh and game restarts -->
+  <form class="form" onsubmit="return false">
+   <label for="guessField" id="enter" >Enter your guess :</label>
+   <input type="number" id="guessField">
+   <input type="submit" value="submit" id="guessSubmit"></input>
+   <button id="resetButton" type="button">Restart</button>
+  </form>
+
+  <div id="result">
+     <p id="guesses"></p>
+     <p id="chances"></p>
+     <p id="lastResult"></p>
+     <p id="lowOrhigh"></p>
+  </div>
+
+ <script src="hads.js"></script>
+ </body>
+</html>
