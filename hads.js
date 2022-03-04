@@ -8,8 +8,6 @@ const chances = document.getElementById('chances');
 const lastResult = document.getElementById('lastResult');
 const lowOrhigh = document.getElementById('lowOrhigh');
 
-/*add css property at the end and it doesn't work
-const resultColor = document.getElementById('lastResult').style.backgroundColor;*/
 const resultColor = document.getElementById('lastResult');
 
 let guessCount = 1;
@@ -70,10 +68,6 @@ function resetGame() {
     guessField.disabled = false;
     guessSubmit.disabled = false;
 
-    /*it will clear the text content
-    guesses.textContent = '';
-    chances.textContent = ''; etc...
-    */
     const result = document.querySelectorAll('#result p');
     for(let i = 0; i< result.length; i++){
         result[i].textContent = '';
@@ -82,7 +76,7 @@ function resetGame() {
     guessField.value = '';
     guessField.focus();
 
-    //if you don't do this the number is same as previes number!
+    //if you don't do this the number is same as previous number!
     randomNumber = Math.floor(Math.random()*100)+1;
 }
 
